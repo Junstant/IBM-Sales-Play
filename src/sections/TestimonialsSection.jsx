@@ -1,5 +1,6 @@
 // File: src/sections/TestimonialsSection.jsx
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 
@@ -219,7 +220,7 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           style={{ perspective: "1000px" }}
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.id}
               className="group relative"

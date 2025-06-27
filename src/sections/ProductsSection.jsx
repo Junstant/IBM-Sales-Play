@@ -1,10 +1,8 @@
 // File: src/sections/ProductsSection.jsx
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import { PiggyBank, CreditCard, Home, TrendingUp, ArrowRight, Check } from 'lucide-react';
-import blackAmexCard from "../assets/black-amex.jpg";
-import blackVisaCard from "../assets/black-visa.jpg";
-import planitumAmexCard from "../assets/platinum-amex1.jpg";
 import platinumVisaCard from "../assets/platinum-visa.jpg";
 import creditoMarfil from "../assets/heroImage1.webp";
 import cuentaMarfil from "../assets/heroImage2.webp";
@@ -204,7 +202,7 @@ export default function ProductsSection() {
 					whileInView="visible"
 					viewport={{ once: true }}
 				>
-					{products.map((product, index) => (
+					{products.map((product) => (
 						<motion.div
 							key={product.id}
 							className="group relative"

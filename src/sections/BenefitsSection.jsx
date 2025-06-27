@@ -1,5 +1,6 @@
 // File: src/sections/BenefitsSection.jsx
 import React, { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, DollarSign, Shield, Banknote } from 'lucide-react';
 
@@ -192,7 +193,7 @@ export default function BenefitsSection() {
                     whileInView="visible"
                     viewport={{ once: true }}
                 >
-                    {benefits.map(({ id, title, description, icon }, index) => (
+                    {benefits.map(({ id, title, description, icon }) => (
                         <motion.div
                             key={id}
                             className="group flex flex-col items-center text-center p-8 bg-white rounded-2xl shadow-lg border border-gray-200 relative overflow-hidden cursor-pointer"

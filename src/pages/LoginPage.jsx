@@ -1,6 +1,7 @@
 // File: src/pages/LoginPage.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Eye, EyeOff, Mail, Lock, ArrowLeft, Shield, Smartphone } from "lucide-react";
 import logo from "../assets/logo.png";

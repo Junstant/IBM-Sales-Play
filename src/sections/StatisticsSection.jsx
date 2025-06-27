@@ -1,5 +1,6 @@
 // File: src/sections/StatisticsSection.jsx
 import React, { useState, useEffect, useRef } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion, useInView } from "framer-motion";
 
 const stats = [
@@ -244,7 +245,7 @@ export default function StatisticsSection() {
           viewport={{ once: true }}
           style={{ perspective: "1000px" }}
         >
-          {stats.map((stat, index) => (
+          {stats.map((stat) => (
             <motion.div 
               key={stat.id} 
               className="group relative" 
